@@ -18,23 +18,23 @@
             <nav class="navbar navbar-expand-lg navbar-light">
                 <div class="container">
                     <a class="navbar-brand" href="#">
-                        <img src="img/logo.png" alt="logo" width="120" height="50"> 
+                        <img src="img/logo.png" alt="logo">
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                           <li class="nav-item dropdown">
+                            <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    Меню
+                                    Каталог
                                 </a>
                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <li><a class="dropdown-item" href="#">• Супы</a></li>
-                                    <li><a class="dropdown-item" href="#">• Закуски</a></li>
-                                    <li><a class="dropdown-item" href="#">• Горячее</a></li>
-                                    <li><a class="dropdown-item" href="#">• Десерты</a></li>
-                                    <li><a class="dropdown-item" href="#">• Напитки</a></li>
+                                    <li><a class="dropdown-item" href="#">• Костюмы</a></li>
+                                    <li><a class="dropdown-item" href="#">• Брюки</a></li>
+                                    <li><a class="dropdown-item" href="#">• Педжаки</a></li>
+                                    <li><a class="dropdown-item" href="#">• Пальто</a></li>
+                                    <li><a class="dropdown-item" href="#">• Головные уборы</a></li>
                                 </ul>
                             </li>
                             <li class="nav-item active">
@@ -44,24 +44,24 @@
                                 <a class="nav-link" href="#">Оплата</a>
                             </li>
                             <li class="nav-item active">
-                                <a class="nav-link" href="#">Бронь стола</a>
+                                <a class="nav-link" href="#">Блог</a>
                             </li>
                         </ul>
                         <div class="menu-right d-flex justify-content-between">
                             <div class="menu-contact">
                                 <a href="">
-                                    <img src="img/telephone.svg">
+                                    <img src="img/phone.png" width="40" height="40">
                                     <span>+7 (999) 999-99-99</span>
                                 </a>
                             </div>
                             <div class="menu-user">
                                 <button class="profile">
-                                    <img src="img/person.svg" alt="person">
+                                    <img src="img/person.png" alt="person" width="31" height="35">
                                 </button>
                             </div>
                             <div class="menu-cart">
                                 <a href="">
-                                    <img src="img/cart.svg">
+                                    <img src="img/cart.png" width="60" height="60">
                                 </a>
                             </div>
                         </div>
@@ -69,12 +69,68 @@
                 </div>
             </nav>
         </header>
+        <section class="home-banner">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="block">
+                            <img src="img/samsonov3.png" alt="samsonov">
+                            <h2>Подарок за подписку на рассылку</h2>
+                            <p>Наш эксперт бесплатно подберёт тебе одежду</p>
+                            <a href="">Подписаться</a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="block">
+                            <img src="img/samsonov3.png" alt="samsonov">
+                            <h2>Подарок на первый заказ</h2>
+                            <p>Наш эксперт бесплатно подберёт тебе одежду</p>
+                            <a href="">Подписаться</a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="block">
+                            <img src="img/samsonov3.png" alt="samsonov">
+                            <h2>Подарок на первый заказ</h2>
+                            <p>Наш эксперт бесплатно подберёт тебе одежду</p>
+                            <a href="">Подписаться</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+        <section class="menu-banner">
+            
+        </section>
     </div>
 
     <!-- Дополнительный JavaScript; выберите один из двух! -->
 
     <!-- Вариант 1: Bootstrap в связке с Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            cssMode: true,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            pagination: {
+                el: '.swiper-pagination'
+            },
+            mousewheel: true,
+            keyboard: true,
+        });
+
+    </script>
 
     <!-- Вариант 2: Bootstrap JS отдельно от Popper
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>

@@ -7,9 +7,21 @@ body {
 *:focus {
   outline: -webkit-focus-ring-color auto 0px !important;
 }
+.swiper-pagination-bullet-active {
+  background: #FF00FF !important;
+  width: 30px !important;
+  border-radius: 9px !important;
+}
+.swiper-button-next,
+.swiper-button-prev {
+  color: #FF00FF !important;
+}
 header {
   background: #FFFFFF;
-  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 0px 19px rgba(0, 0, 0, 0.12);
+}
+header .navbar-brand {
+  margin-right: 38px;
 }
 header nav {
   width: 100%;
@@ -17,7 +29,7 @@ header nav {
 }
 header .dropdown-menu {
   background: #FFFFFF;
-  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 0px 19px rgba(0, 0, 0, 0.12);
   border-radius: 12px;
   border: none;
   padding: 56px 0 0;
@@ -28,9 +40,12 @@ header .dropdown-menu {
 }
 header .dropdown-menu .dropdown-item {
   font-size: 16px;
-  line-height: 20px;
-  color: #333333;
+  line-height: 24px;
   display: flex;
+}
+header .dropdown-menu .dropdown-item.active,
+header .dropdown-menu .dropdown-item:active {
+  background-color: #FF00FF;
 }
 header .navbar-light .navbar-nav .nav-item.dropdown a {
   position: relative;
@@ -74,4 +89,67 @@ header .menu-right .menu-user button {
 }
 header .menu-right .menu-cart {
   margin-left: 30px;
+}
+.home-banner {
+  padding-top: 60px;
+  padding-right: 95px;
+  padding-left: 95px;
+  z-index: -1;
+  position: relative;
+}
+.home-banner .swiper-container {
+  width: 100%;
+  height: 100%;
+}
+.home-banner .swiper-slide {
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+}
+.home-banner .block {
+  background-color: #EBEBF5;
+  position: relative;
+  box-shadow: 0px 0px 19px rgba(0, 0, 0, 0.12);
+  border-radius: 19px;
+  height: 300px;
+  width: 100%;
+  overflow: hidden;
+  padding: 50px;
+}
+.home-banner .block img {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.home-banner .block h2 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 38px;
+  color: #333333;
+}
+.home-banner .block p {
+  font-size: 20px;
+  line-height: 24px;
+  color: #828282;
+}
+.home-banner .block a {
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 30px;
+  color: #FFFFFF;
+  width: 218px;
+  height: 53px;
+  background: #FF00FF;
+  border-radius: 5px;
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  line-height: 53px;
+  margin-top: 24px;
+}
+.menu-banner {
+  padding-top: 1px;
+  padding-right: 95px;
+  padding-left: 95px;
 }
