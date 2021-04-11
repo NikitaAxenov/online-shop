@@ -18,7 +18,7 @@
             <nav class="navbar navbar-expand-lg navbar-light">
                 <div class="container">
                     <a class="navbar-brand" href="#">
-                        <img src="img/logo.png" alt="logo">
+                        <img src="img/logo.png" alt="logo" height="40" width="250">
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
@@ -30,11 +30,16 @@
                                     Каталог
                                 </a>
                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#">• Верхняя одежда</a></li>
                                     <li><a class="dropdown-item" href="#">• Костюмы</a></li>
-                                    <li><a class="dropdown-item" href="#">• Брюки</a></li>
                                     <li><a class="dropdown-item" href="#">• Педжаки</a></li>
-                                    <li><a class="dropdown-item" href="#">• Пальто</a></li>
+                                    <li><a class="dropdown-item" href="#">• Под педжак</a></li>
+                                    <li><a class="dropdown-item" href="#">• Свитера</a></li>
+                                    <li><a class="dropdown-item" href="#">• Брюки</a></li>
                                     <li><a class="dropdown-item" href="#">• Головные уборы</a></li>
+                                    <li><a class="dropdown-item" href="#">• Шарфы</a></li>
+                                    <li><a class="dropdown-item" href="#">• Обувь</a></li>
+                                    <li><a class="dropdown-item" href="#">• Аксессуары</a></li>
                                 </ul>
                             </li>
                             <li class="nav-item active">
@@ -50,18 +55,18 @@
                         <div class="menu-right d-flex justify-content-between">
                             <div class="menu-contact">
                                 <a href="">
-                                    <img src="img/phone.png" width="40" height="40">
-                                    <span>+7 (999) 999-99-99</span>
+                                    <img src="img/phone.png">
+                                    <span>+7 (495) 545-41-62</span>
                                 </a>
                             </div>
                             <div class="menu-user">
                                 <button class="profile">
-                                    <img src="img/person.png" alt="person" width="31" height="35">
+                                    <img src="img/person.png" alt="person">
                                 </button>
                             </div>
                             <div class="menu-cart">
                                 <a href="">
-                                    <img src="img/cart.png" width="60" height="60">
+                                    <img src="img/cart.png">
                                 </a>
                             </div>
                         </div>
@@ -103,7 +108,25 @@
             </div>
         </section>
         <section class="menu-banner">
-            
+           <div class="container">
+            <div class="swiper-container-menu">
+                <div class="swiper-wrapper">
+                    <a href="" class="swiper-slide">Верхняя одежда</a>
+                    <a href="" class="swiper-slide">Костюмы</a>
+                    <a href="" class="swiper-slide">Под костюм</a>
+                    <a href="" class="swiper-slide">Пиджаки</a>
+                    <a href="" class="swiper-slide">Свитера</a>
+                    <a href="" class="swiper-slide">Брюки</a>
+                    <a href="" class="swiper-slide">Головные уборы</a>
+                    <a href="" class="swiper-slide">Шарфы</a>
+                    <a href="" class="swiper-slide">Обувь</a>
+                    <a href="" class="swiper-slide">Аксессуары</a>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+            </div>
         </section>
     </div>
 
@@ -131,6 +154,29 @@
         });
 
     </script>
+
+    <script>
+    var menu_swiper = new Swiper('.swiper-container-menu', {
+      slidesPerView: 'auto',
+      direction: getDirection(),
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      on: {
+        resize: function () {
+          swiper.changeDirection(getDirection());
+        }
+      }
+    });
+
+    function getDirection() {
+      var windowWidth = window.innerWidth;
+      var direction = window.innerWidth <= 760 ? 'vertical' : 'horizontal';
+
+      return direction;
+    }
+  </script>
 
     <!-- Вариант 2: Bootstrap JS отдельно от Popper
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
