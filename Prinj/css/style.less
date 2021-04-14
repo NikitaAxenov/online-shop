@@ -4,6 +4,79 @@ body {
     color: black;
 }
 
+.btn-for-pr {
+    background: #FF00FF;
+    border-radius: 7px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 21px;
+    text-align: center;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 14px 38px;
+    text-decoration: none;
+    margin-right: 60px;
+
+    &:hover {
+        color: white;
+    }
+}
+
+.btn-for-pay {
+    border-radius: 7px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 21px;
+    text-align: center;
+    color: #FF00FF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 14px 38px;
+    text-decoration: none;
+    margin-right: 60px;
+
+    &:hover {
+        color: #FF00FF;
+    }
+
+    svg {
+        padding-left: 5px;
+        padding-top: 7px;
+    }
+}
+
+.btn-for-send {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    color: #FFFFFF;
+    width: 160px;
+    height: 43px;
+    background: #FF00FF;
+    border-radius: 7px;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    line-height: 43px;
+    margin-top: 24px;
+    &:hover{
+        color: white;
+    }
+}
+
+.input-group{
+        box-shadow: 0px 0px 19px rgba(0, 0, 0, 0.12) !important;
+    width: 45%; 
+    height: 150px;
+    
+.form-control{
+    border-radius: 7px;
+    background-color:azure;
+}
+}
 
 .swiper-pagination-bullet-active {
     background: #FF00FF !important;
@@ -14,6 +87,7 @@ body {
 .swiper-button-next,
 .swiper-button-prev {
     color: #FF00FF !important;
+
 }
 
 header {
@@ -125,59 +199,61 @@ header {
     .swiper-container {
         width: 100%;
         height: 100%;
-    }
 
-    .swiper-slide {
-        font-size: 18px;
-        background: #fff;
-        display: flex;
-    }
 
-    .block {
-        width: 100%;
-        background-color: #EBEBF5;
-        position: relative;
-        box-shadow: 0px 0px 19px rgba(0, 0, 0, 0.12);
-        border-radius: 19px;
-        height: 300px;
-        width: 100%;
-        overflow: hidden;
-        padding: 50px;
+        .swiper-slide {
+            font-size: 18px;
+            background: #fff;
+            display: flex;
 
-        img {
-            position: absolute;
-            top: 0;
-            right: 0;
-        }
 
-        h2 {
-            font-style: normal;
-            font-weight: normal;
-            font-size: 32px;
-            line-height: 38px;
-            color: #333333;
-        }
+            .block {
+                width: 100%;
+                background-color: #EBEBF5;
+                position: relative;
+                box-shadow: 0px 0px 19px rgba(0, 0, 0, 0.12);
+                border-radius: 19px;
+                height: 300px;
+                width: 100%;
+                overflow: hidden;
+                padding: 50px;
 
-        p {
-            font-size: 20px;
-            line-height: 24px;
-            color: #828282;
-        }
+                img {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                }
 
-        a {
-            font-weight: 500;
-            font-size: 25px;
-            line-height: 30px;
-            color: #FFFFFF;
-            width: 218px;
-            height: 53px;
-            background: #FF00FF;
-            border-radius: 5px;
-            display: block;
-            text-decoration: none;
-            text-align: center;
-            line-height: 53px;
-            margin-top: 24px;
+                h2 {
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 32px;
+                    line-height: 38px;
+                    color: #333333;
+                }
+
+                p {
+                    font-size: 20px;
+                    line-height: 24px;
+                    color: #828282;
+                }
+
+                a {
+                    font-weight: 500;
+                    font-size: 25px;
+                    line-height: 30px;
+                    color: #FFFFFF;
+                    width: 218px;
+                    height: 53px;
+                    background: #FF00FF;
+                    border-radius: 5px;
+                    display: block;
+                    text-decoration: none;
+                    text-align: center;
+                    line-height: 53px;
+                    margin-top: 24px;
+                }
+            }
         }
     }
 }
@@ -218,12 +294,20 @@ header {
                 color: black;
                 line-height: 27px;
                 text-transform: uppercase;
-                margin-right: 95px !important;
+                margin-right: 79px !important;
                 margin-left: 30px !important;
                 width: auto !important;
+                padding: 8px 16px;
 
                 &:hover {
                     color: #FF00FF;
+                }
+
+                &.active {
+                    background: #FF00FF;
+
+                    color: white;
+                    border-radius: 5px;
                 }
             }
         }
@@ -389,7 +473,7 @@ header {
         box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.03);
         border-radius: 18px;
         padding: 30px 0 30px 40px;
-        background-image: url(../img/samsonov3.png);
+        background-image: url(../img/samsonov.png);
         background-position: center right;
         background-repeat: no-repeat;
 
@@ -533,5 +617,173 @@ footer {
             text-decoration: none;
             color: #FFFFFF;
         }
+    }
+}
+
+.dil-page {
+    padding: 45px 0 60px;
+
+    .dil-page-wrapper {
+        h1 {
+            padding-bottom: 25px;
+        }
+
+        p {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 22px;
+            line-height: 26px;
+            color: #828282;
+            padding-bottom: 25px;
+        }
+    }
+}
+
+@media screen and (min-width: 975px) and (max-width: 1140px) {
+    .home-banner {
+        padding-top: 60px;
+        padding-right: 95px;
+        padding-left: 95px;
+        z-index: 0;
+        position: relative;
+
+        .swiper-container {
+            width: 100%;
+            height: 100%;
+
+
+            .swiper-slide {
+                font-size: 18px;
+                background: #fff;
+                display: flex;
+
+
+                .block {
+                    width: 100%;
+                    background-color: #EBEBF5;
+                    position: relative;
+                    box-shadow: 0px 0px 19px rgba(0, 0, 0, 0.12);
+                    border-radius: 19px;
+                    height: 230px;
+                    overflow: hidden;
+                    padding: 50px;
+
+                    img {
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        height: 230px;
+                        width: 470px;
+                    }
+
+                    h2 {
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 25px;
+                        line-height: 31px;
+                        color: #333333;
+                    }
+
+                    p {
+                        font-size: 15px;
+                        line-height: 21px;
+                        color: #828282;
+                    }
+
+                    a {
+                        font-weight: 500;
+                        font-size: 21px;
+                        line-height: 45px;
+                        color: #FFFFFF;
+                        width: 180px;
+                        height: 45px;
+                        background: #FF00FF;
+                        border-radius: 5px;
+                        display: block;
+                        text-decoration: none;
+                        text-align: center;
+                        margin-top: 21px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 762px) and (max-width: 975px) {
+    .home-banner {
+        padding-top: 60px;
+        padding-right: 95px;
+        padding-left: 95px;
+        z-index: 0;
+        position: relative;
+
+        .swiper-container {
+            width: 100%;
+            height: 100%;
+
+
+            .swiper-slide {
+                font-size: 18px;
+                background: #fff;
+                display: flex;
+
+
+                .block {
+                    width: 100%;
+                    background-color: #EBEBF5;
+                    position: relative;
+                    box-shadow: 0px 0px 19px rgba(0, 0, 0, 0.12);
+                    border-radius: 19px;
+                    height: 150px;
+                    overflow: hidden;
+                    padding-top: 25px;
+                    padding-left: 45px;
+
+                    img {
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        height: 150px;
+                        width: 310px;
+                    }
+
+                    h2 {
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 15px;
+                        line-height: 31px;
+                        color: #333333;
+                    }
+
+                    p {
+                        font-size: 11px;
+                        line-height: 21px;
+                        color: #828282;
+                    }
+
+                    a {
+                        font-weight: 400;
+                        font-size: 15px;
+                        line-height: 30px;
+                        color: #FFFFFF;
+                        width: 130px;
+                        height: 30px;
+                        background: #FF00FF;
+                        border-radius: 5px;
+                        display: block;
+                        text-decoration: none;
+                        text-align: center;
+                        margin-top: 12px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 762px) {
+    .swiper-container {
+        display: table;
     }
 }
